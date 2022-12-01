@@ -27,7 +27,7 @@ class Users::SessionsController < Devise::SessionsController
   #   devise_parameter_sanitizer.permit(:sign_in, keys: [:attribute])
   # end
 
-  def respond_with(resource, _opts = {})    
+  def respond_with(resource, _opts = {})  
     render json: {
       status: {code: 200, message: 'Logged In Suceesfully.'},
       data: UserSerializer.new(resource).serializable_hash[:data][:attributes]
@@ -35,16 +35,19 @@ class Users::SessionsController < Devise::SessionsController
   end
    
   def respond_to_on_destroy
-    if current_user
+    puts '--------'
+    puts current_user
+    puts '--------'
+  
       render json: {
         status: 200,
         message: "Logged Out Successfully"
       }, status: :ok
-    else
-      render json: {
-        status: 401,
-        message: "Could not find active session."       
-      }, status: :unauthorized
-    end
+    # else
+    #   render json: {
+    #     status: 401,
+    #     message: "Could not find active session."       
+    #   }, status: :unauthorized
+    # end
   end  
 end
