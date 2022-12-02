@@ -8,10 +8,12 @@ gem "rails", "~> 7.0.4"
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-
-gem 'devise'
-
-gem 'jsonapi-serializer'
+gem 'active_model_serializers', '~> 0.10.0'
+gem 'activestorage-cloudinary-service', '~> 0.2.3'
+gem 'cloudinary', '~> 1.23'
+gem 'jwt'
+gem "ffi"
+gem 'whenever', require: false
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
