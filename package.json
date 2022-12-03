@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "active-model-serializers-nodejs": "^0.1.0",
+    "active-serializer": "^1.0.6",
+    "cloudinary": "^1.32.0"
+  }
+}
