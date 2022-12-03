@@ -5,7 +5,7 @@
 #   gem "sqlite3"
 #
 default: &default
-  adapter: pg
+  adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
@@ -14,7 +14,7 @@ development:
   database: house_rental_app_devlopment
   hostname: localhost
   username: postgres
-  password: postgres
+  password: gidiz111
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,6 +22,10 @@ development:
 test:
   <<: *default
   database: house_rental_app_test
+  hostname: localhost
+  username: postgres
+  password: gidiz111
+
 
 production:
   <<: *default
