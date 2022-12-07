@@ -7,7 +7,8 @@ Rails.application.routes.draw do
     namespace :v1 do
           post "/signup", to: "users#create"
           post "/login", to: "sessions#create" 
-          post "/add_car", to: "cars#create"  
+          post "/add_car", to: "cars#create" 
+          get "/get_cars", to: "cars#index"  
           resources :cars        
     end
 end
