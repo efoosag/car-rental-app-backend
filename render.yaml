@@ -1,6 +1,7 @@
 databases:
   - name: postgres
-    ipAllowedList: []
+    databaseName: car_rental_app_production
+    user: postgres
 
 services:
   - type: web
@@ -15,8 +16,4 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-  - type: redis
-    name: redis
-    ipAllowedList: []
-    plan: free
-    maxmemoryPolicy: noeviction
+  
