@@ -1,6 +1,6 @@
 databases:
   - name: postgres
-    databaseName: car_rental_app_production
+    databaseName: house_rental_app_development
     user: postgres
 
 services:
