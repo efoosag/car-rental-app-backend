@@ -1,14 +1,13 @@
 databases:
   - name: postgres
-    databaseName: house_rental_app_development
-    user: postgres
+    ipAllowedList: []
 
 services:
   - type: web
     name: rails
     env: ruby
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
+    startCommand: "bundle exec rails s"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
