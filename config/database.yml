@@ -27,4 +27,5 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: house_rental_app_production
