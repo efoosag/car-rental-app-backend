@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Api::V1::SessionsControllerTest < ActionDispatch::IntegrationTest
+class CarTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
