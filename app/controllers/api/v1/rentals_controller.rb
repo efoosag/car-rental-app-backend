@@ -7,6 +7,8 @@ class Api::V1::RentalsController < ApplicationController
 
     def create
       @rental = Rental.new(rental_params)
+    #    @rental.user_id = User.find_by_email(params[:email]).id
+    # puts @car.user_id
       if @rental.save
         render json: @rental, status: 200
       else
