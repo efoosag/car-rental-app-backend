@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+ 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
           post "/add_car", to: "cars#create" 
           get "/get_cars", to: "cars#index"  
           resources :cars        
+          post "/login", to: "sessions#create"
+          resources :rentals
     end
 end
 end
