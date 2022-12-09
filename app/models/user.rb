@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :rentals
+  has_many :rentals, foreign_key: :user_id
 
   validates :email, presence: true
   validates :email, uniqueness: true

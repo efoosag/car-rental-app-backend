@@ -7,8 +7,9 @@ class Api::V1::RentalsController < ApplicationController
 
     def create
       @rental = Rental.new(rental_params)
-    #    @rental.user_id = User.find_by_email(params[:email]).id
-    # puts @car.user_id
+      @user = User.find_by(params[:email])  
+       @rental.user_id = @user.id
+     puts @rental.user_id
       if @rental.save
         render json: @rental, status: 200
       else
@@ -28,7 +29,7 @@ class Api::V1::RentalsController < ApplicationController
       private
 
       def rental_params
-        params.require(:rental).permit(:car_brand, :rent_date, :number_of_days, :location)
+        params.require(:rental).permit(:user_id, :car_brand, :rent_date, :number_of_days, :location)
       end
     end
 
