@@ -11,8 +11,7 @@ Rails.application.routes.draw do
           post "/add_car", to: "cars#create" 
           get "/get_cars", to: "cars#index"  
           resources :cars        
-          post "/login", to: "sessions#create"
           resources :rentals
     end
-end
+  end
 end
