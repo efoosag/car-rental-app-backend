@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - In order to get a copy of this project you need to clone it from `https://github.com/efoosag/car-rental-app-backend.git `
-- The link to the frontend file is  `https://github.com/efoosag/car-rental-app.git`t`
+- The link to the frontend file is  [Fornt End](https://github.com/efoosag/car-rental-app.git)
 
 
 ### Install and start
@@ -87,4 +87,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/efoosag/car-rental-app/blob/Dev/LICENCE) licensed.
+This project is [MIT](https://github.com/efoosag/car-rental-app/blob/dev/LICENSE) licensed.
