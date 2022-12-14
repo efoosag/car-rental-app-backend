@@ -38,17 +38,38 @@ To get a local copy up and running follow these simple example steps.
 - In order to get a copy of this project you need to clone it from `https://github.com/efoosag/car-rental-app-backend.git `
 - The link to the frontend file is  [Fornt End](https://github.com/efoosag/car-rental-app.git)
 
+To get a local copy up and running, follow these steps:
 
-### Install and start
+- You should have **_Ruby_** installed on your computer.
+- You should also have **_Rails_** installed on your computer.
+- Clone this repository into your computer by running the following command in your terminal:
 
-- Run the command bellow in your terminal to get all required files
+```bash
+> git clone https://github.com/efoosag/car-rental-app-backend.git
+> cd car-rental-app-backend
+```
+
+- Run this command in the cloned directory, to install required gems:
 
 ```
-npm install
+> bundle install
 ```
 
+- Then create the posgreSQL database needed for this app, run the migrations and seed data with the following commands:
+
+```bash
+> rails db:create
+> rails db:migrate
+> rails db:seed
 ```
-npm start
+
+- Run `Rubocop -A` and fix linters errors, if any.
+
+* Run the project in your browser:
+
+```
+rails server
+```
 ```
 
 ## Authors
