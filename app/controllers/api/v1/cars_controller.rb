@@ -6,7 +6,8 @@ class Api::V1::CarsController < ApplicationController
 
   def create
     @car = Car.new(car_params)
-    @car.user_id = User.find_by_email(params[:email]).id
+    @user= User.find_by(params[:email])
+    @car.user_id = @user.id
     puts @car.user_id
     if @car.save
       render json: @car, each_serializer: CarSerializer
