@@ -14,7 +14,7 @@ development:
   database: house_rental_app_devlopment
   hostname: localhost
   username: postgres
-  password: gidiz111
+  password: postgres
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,7 +24,7 @@ test:
   database: house_rental_app_test
   hostname: localhost
   username: postgres
-  password: gidiz111
+  password: postgres
 
 
 production:
