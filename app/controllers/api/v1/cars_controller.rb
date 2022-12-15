@@ -6,7 +6,7 @@ class Api::V1::CarsController < ApplicationController
 
   def create
     @car = Car.new(car_params)
-    @user= User.find_by(params[:email])
+    @user = User.find_by(params[:email])
     @car.user_id = @user.id
     puts @car.user_id
     if @car.save
@@ -25,7 +25,6 @@ class Api::V1::CarsController < ApplicationController
     Car.destroy(params[:id])
   end
 
-  
   private
 
   def car_params
