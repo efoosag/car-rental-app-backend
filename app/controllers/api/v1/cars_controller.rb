@@ -25,6 +25,7 @@ class Api::V1::CarsController < ApplicationController
     Car.destroy(params[:id])
   end
 
+  
   private
 
   def car_params
