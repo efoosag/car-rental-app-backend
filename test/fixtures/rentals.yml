@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_brand: MyString
+  rent_date: 2022-12-06
+  number_of_days: 1
+  location: MyString
+
+two:
+  car_brand: MyString
+  rent_date: 2022-12-06
+  number_of_days: 1
+  location: MyString
